@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Bike Rallye Anmeldung</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>E-Bike Rallye Anmeldung</h1>
+    <p>Willkommen zur Anmeldung für die spannende E-Bike Rallye!</p>
+  </header>
+
+  <main>
+    <form id="registration-form" action="#" method="post">
+      <h2>Persönliche Daten</h2>
+      <label for="firstname">Vorname:</label>
+      <input type="text" id="firstname" name="firstname" required>
+
+      <label for="lastname">Nachname:</label>
+      <input type="text" id="lastname" name="lastname" required>
+
+      <label for="birthdate">Geburtsdatum:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+
+      <label>Geschlecht:</label>
+      <label><input type="radio" name="gender" value="male" required> Männlich</label>
+      <label><input type="radio" name="gender" value="female"> Weiblich</label>
+      <label><input type="radio" name="gender" value="diverse"> Divers</label>
+
+      <h2>Kontaktinformationen</h2>
+      <label for="email">E-Mail-Adresse:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Telefonnummer:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">Adresse:</label>
+      <input type="text" id="address" name="address" placeholder="Straße, Nr." required>
+      <input type="text" id="city" name="city" placeholder="PLZ, Ort" required>
+
+      <h2>Angaben zum E-Bike</h2>
+      <label for="manufacturer">Hersteller:</label>
+      <input type="text" id="manufacturer" name="manufacturer" required>
+
+      <label for="model">Modell:</label>
+      <input type="text" id="model" name="model" required>
+
+      <label for="power">Motorleistung (in Nm):</label>
+      <input type="number" id="power" name="power" required>
+
+      <label for="battery">Akkukapazität (in Wh):</label>
+      <input type="number" id="battery" name="battery" required>
+
+      <h2>Notfallkontakt</h2>
+      <label for="emergency-name">Name:</label>
+      <input type="text" id="emergency-name" name="emergency-name" required>
+
+      <label for="emergency-phone">Telefonnummer:</label>
+      <input type="tel" id="emergency-phone" name="emergency-phone" required>
+
+      <h2>Sonstiges</h2>
+      <label>Vegetarisches oder veganes Essen gewünscht?</label>
+      <label><input type="radio" name="meal" value="vegetarian"> Vegetarisch</label>
+      <label><input type="radio" name="meal" value="vegan"> Vegan</label>
+      <label><input type="radio" name="meal" value="none" required> Nein</label>
+
+      <label for="notes">Besonderheiten oder medizinische Hinweise:</label>
+      <textarea id="notes" name="notes" rows="4"></textarea>
+
+      <button type="submit">Anmelden</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 E-Bike Rallye. Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>
